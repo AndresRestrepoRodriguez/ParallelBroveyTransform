@@ -2,7 +2,7 @@
 
 ## Descripción
 
-ParallelBrovey-Transform esta compuesto por dos Scripts desarrollados en Python, con el fin de realizar la fusión de imágenes de satélite de diferentes resoluciones espaciales y / o provenientes de diferentes sensores remotos mediante la transformada Brovey. Estos Scripts se desarrollaron tanto en CPU como en procesamiento Heterogéneo más específicamente CPU/GPU, haciendo uso de CUDA mediante Pycuda con el fin de hacer la integración con Python.
+Esta herramienta implementa la transformada de Brovey como técnica de fusión de imágenes junto con un ajuste de riqueza espectral sobre una arquitectura de computación heterogénea CPU/GPU utilizando un modelo de procesamiento paralelo masivo, el cual fue desarrollado mediante CUDA. La evaluación de esta implementación evidenció un Speed-up de hasta 532X en el proceso de fusión de una imagen de 8192 píxeles. En cuanto a calidad de la imagen obtenida, al obtener el coeficiente de correlación entre la imagen fusionada y la pancromática, se obtuvo un promedio de detalle espacial por banda del 0.9714 en un espacio de color (R,G,B).
 
 ## Manual de Usuario
 
